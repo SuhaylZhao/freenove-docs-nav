@@ -140,13 +140,13 @@ let navBarHTML =
 function setNavBar() {
 	let navBar = document.getElementById('navContent');
 
-	// console.log("111: " + navBar.innerHTML);
+	console.log("111: " + navBar.innerHTML);
 	navBar.innerHTML = navBarHTML;
-	// console.log("222: " + navBar.innerHTML);
+	console.log("222: " + navBar.innerHTML);
 }
 
 window.onload = function () {
 
 	console.log('window.onload');
-	// setPageLogo();
+	setPageLogo();
 };
