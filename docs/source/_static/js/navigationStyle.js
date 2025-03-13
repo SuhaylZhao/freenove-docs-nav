@@ -150,3 +150,5 @@ window.onload = function () {
 	console.log('window.onload');
 	setPageLogo();
 };
+
+console.log('freenove');
