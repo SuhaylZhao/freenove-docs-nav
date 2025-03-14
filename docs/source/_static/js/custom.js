@@ -66,7 +66,7 @@ function setPageLogo() {
 	document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-let navBarHTML =
+let navBarHtml =
 	`
   <div class="nav_fn">
     <ul>
@@ -137,18 +137,36 @@ let navBarHTML =
 </div>
 `;
 
+let footerHtml = `
+<div style="border-top: 1px solid #ccc; ">
+    <br/>
+    <div id="copy_right" style="float: left;">
+        © CopyRight 2016 - 2025
+    </div>
+    <div style="float: right;">
+        Need help? Contact <a href="mailto:support@freenove.com">support@freenove.com</a> 
+    </div>
+    <br/>
+</div>`;
+
 function setNavBar() {
 	let navBar = document.getElementById('navContent');
 
 	console.log("111: " + navBar.innerHTML);
-	navBar.innerHTML = navBarHTML;
+	navBar.innerHTML = navBarHtml;
 	console.log("222: " + navBar.innerHTML);
 }
 
 window.onload = function () {
 
-	console.log('window.onload');
-	setPageLogo();
+	// console.log('window.onload');
+	// setPageLogo();
+
+    console.log('window.onload');
+    let footer_content = document.getElementById('footer_content');
+	footer_content.innerHTML = footerHtml;
+    $("#copy_right").text("© CopyRight 2016 - " + new Date().getFullYear() + ", Freenove")
 };
 
 console.log('freenove');
+
